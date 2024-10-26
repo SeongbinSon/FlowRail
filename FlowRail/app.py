@@ -1,11 +1,11 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 import requests
 import pandas as pd
 import networkx as nx
 from collections import defaultdict
 
 app = Flask(__name__)
-
+app.secret_key = 'test_session_key'
 df = pd.read_csv("./FlowRail/static/distance_station.csv",encoding='cp949')
 
 column_name_mapping = {
@@ -457,13 +457,21 @@ def direction():
         # 소요 시간을 시, 분, 초로 변환
         hours, remainder = divmod(best_time, 3600)
         minutes, seconds = divmod(remainder, 60)
-
-        # 경로에서 역 이름만 추출
+        
         station_path = [station for station, _ in best_path]
-
+        # 경로에서 역 이름만 추출
         print(f"최단 경로: {' -> '.join(station_path)}")
         print(f"총 소요 시간: {hours}시간 {minutes}분 {seconds}초")
         print(f"환승역: {', '.join(best_transfers)}")
+
+        session['path'] = station_path
+        session['hours'] = hours
+        session['minutes'] = minutes
+        session['seconds'] = seconds
+        session['start'] = start
+        session['end'] = end
+        session['best_transfers'] = best_transfers
+
 
         return render_template("./service_templates/direction.html", 
                                start=start, 
@@ -475,6 +483,43 @@ def direction():
                                transfers=best_transfers)
     else:
         return render_template("./service_templates/direction.html")
+
+def get_train_num_and_arrivaltime(name):
+    arrival_First_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/0/40/"+name
+    arrival_Second_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/1/40/"+name
+
+    arrival_first = requests.get(arrival_First_search)
+    arrival_second = requests.get(arrival_Second_search)
+
+    arrival_first = arrival_first.json()
+    arrival_second = arrival_second.json()
+
+
+
+@app.route("/step/<int:num>")
+def step(num):
+    #다불러오셈
+    station_path = session.get('path')
+    hours = session.get('hours')
+    minutes = session.get('minutes')
+    seconds = session.get('seconds')
+    start = session.get('start')
+    end = session.get('end')
+    best_transfers = session.get('best_transfers')
+    arrival_first = get_train_num_and_arrivaltime(start)
+    arrival_second = get_train_num_and_arrivaltime(start)
+
+    return render_template('./service_templates/step.html',
+                            index = str(num),
+                            start=start,
+                            end=end, 
+                            path=station_path,
+                            hours=hours,
+                            minutes=minutes,
+                            seconds=seconds,
+                            transfers=best_transfers,
+                            arrival_first=arrival_first,
+                            arrival_second=arrival_second)
 
 
 if __name__ == '__main__':
