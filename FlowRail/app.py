@@ -501,7 +501,7 @@ def get_train_num_and_arrivaltime(name):
 
 @app.route("/step/<int:num>")
 def step(num):
-    #다불러오셈
+    
     station_path = session.get('path')
     hours = session.get('hours')
     minutes = session.get('minutes')
