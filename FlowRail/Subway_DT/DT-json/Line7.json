@@ -1,0 +1,305 @@
+{
+    "StationDstncReqreTimeHm": {
+      "list_total_count": 42,
+      "RESULT": {
+        "CODE": "INFO-000",
+        "MESSAGE": "정상 처리되었습니다"
+      },
+      "row": [
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "장암",
+          "HM": "0:00",
+          "DIST_KM": 0,
+          "ACML_DIST": 0
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "도봉산",
+          "HM": "4:30",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 1.4
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "수락산",
+          "HM": "2:20",
+          "DIST_KM": 1.6,
+          "ACML_DIST": 3
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "마들",
+          "HM": "2:00",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 4.4
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "노원",
+          "HM": "1:30",
+          "DIST_KM": 1.2,
+          "ACML_DIST": 5.6
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "중계",
+          "HM": "1:20",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 6.7
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "하계",
+          "HM": "1:10",
+          "DIST_KM": 1,
+          "ACML_DIST": 7.7
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "공릉",
+          "HM": "1:30",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 9
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "태릉입구",
+          "HM": "1:00",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 9.8
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "먹골",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 10.7
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "중화",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 11.6
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "상봉",
+          "HM": "1:50",
+          "DIST_KM": 1,
+          "ACML_DIST": 12.6
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "면목",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 13.4
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "사가정",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 14.3
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "용마산",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 15.1
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "중곡",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 16
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "군자",
+          "HM": "1:20",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 17.1
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "어린이대공원",
+          "HM": "1:20",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 18.2
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "건대입구",
+          "HM": "1:20",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 19
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "뚝섬유원지",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 20
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "청담",
+          "HM": "2:30",
+          "DIST_KM": 2,
+          "ACML_DIST": 22
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "강남구청",
+          "HM": "1:30",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 23.1
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "학동",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 24
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "논현",
+          "HM": "1:20",
+          "DIST_KM": 1,
+          "ACML_DIST": 25
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "반포",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 25.9
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "고속터미널",
+          "HM": "1:30",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 26.8
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "내방",
+          "HM": "2:30",
+          "DIST_KM": 2.2,
+          "ACML_DIST": 29
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "이수",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 30
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "남성",
+          "HM": "1:20",
+          "DIST_KM": 1,
+          "ACML_DIST": 31
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "숭실대입구",
+          "HM": "2:30",
+          "DIST_KM": 2,
+          "ACML_DIST": 33
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "상도",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 33.9
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "장승배기",
+          "HM": "2:30",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 34.8
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "신대방삼거리",
+          "HM": "1:50",
+          "DIST_KM": 1.2,
+          "ACML_DIST": 36
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "보라매",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 36.8
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "신풍",
+          "HM": "2:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 37.7
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "대림",
+          "HM": "2:00",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 39.1
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "남구로",
+          "HM": "1:30",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 40.2
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "가산디지털단지",
+          "HM": "1:20",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 41
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "철산",
+          "HM": "2:00",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 42.4
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "광명사거리",
+          "HM": "1:50",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 43.7
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "천왕",
+          "HM": "2:00",
+          "DIST_KM": 1.7,
+          "ACML_DIST": 45.4
+        },
+        {
+          "SBWY_ROUT_LN": "7",
+          "SBWY_STNS_NM": "온수",
+          "HM": "2:20",
+          "DIST_KM": 1.5,
+          "ACML_DIST": 46.9
+        }
+      ]
+    }
+  }

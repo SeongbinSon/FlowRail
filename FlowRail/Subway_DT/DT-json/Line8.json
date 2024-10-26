@@ -1,0 +1,137 @@
+{
+    "StationDstncReqreTimeHm": {
+      "list_total_count": 18,
+      "RESULT": {
+        "CODE": "INFO-000",
+        "MESSAGE": "정상 처리되었습니다"
+      },
+      "row": [
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "암사",
+          "HM": "0:00",
+          "DIST_KM": 0,
+          "ACML_DIST": 0
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "천호",
+          "HM": "1:30",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 1.3
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "강동구청",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 2.2
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "몽촌토성",
+          "HM": "2:00",
+          "DIST_KM": 1.6,
+          "ACML_DIST": 3.8
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "잠실",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 4.6
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "석촌",
+          "HM": "1:50",
+          "DIST_KM": 1.2,
+          "ACML_DIST": 5.8
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "송파",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 6.7
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "가락시장",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 7.5
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "문정",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 8.4
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "장지",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 9.3
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "복정",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 10.2
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "남위례",
+          "HM": "1:50",
+          "DIST_KM": 1.5,
+          "ACML_DIST": 11.7
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "산성",
+          "HM": "1:40",
+          "DIST_KM": 1.2,
+          "ACML_DIST": 12.9
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "남한산성입구",
+          "HM": "2:10",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 14.2
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "단대오거리",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 15
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "신흥",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 15.8
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "수진",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 16.7
+        },
+        {
+          "SBWY_ROUT_LN": "8",
+          "SBWY_STNS_NM": "모란",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 17.7
+        }
+      ]
+    }
+  }

@@ -1,0 +1,291 @@
+{
+    "StationDstncReqreTimeHm": {
+      "list_total_count": 40,
+      "RESULT": {
+        "CODE": "INFO-000",
+        "MESSAGE": "정상 처리되었습니다"
+      },
+      "row": [
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "응암",
+          "HM": "0:00",
+          "DIST_KM": 0,
+          "ACML_DIST": 0
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "역촌",
+          "HM": "1:40",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 1.1
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "불광",
+          "HM": "1:20",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 1.9
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "독바위",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 2.8
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "연신내",
+          "HM": "2:10",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 4.2
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "구산",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 5.1
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "응암",
+          "HM": "2:00",
+          "DIST_KM": 1.5,
+          "ACML_DIST": 6.6
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "새절",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 7.5
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "증산",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 8.4
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "디지털미디어시티",
+          "HM": "1:20",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 9.5
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "월드컵경기장",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 10.3
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "마포구청",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 11.1
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "망원",
+          "HM": "1:20",
+          "DIST_KM": 1,
+          "ACML_DIST": 12.1
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "합정",
+          "HM": "1:20",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 12.9
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "상수",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 13.7
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "광흥창",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 14.6
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "대흥",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 15.6
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "공덕",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 16.5
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "효창공원앞",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 17.4
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "삼각지",
+          "HM": "1:30",
+          "DIST_KM": 1.2,
+          "ACML_DIST": 18.6
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "녹사평",
+          "HM": "1:40",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 19.7
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "이태원",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 20.5
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "한강진",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 21.5
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "버티고개",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 22.5
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "약수",
+          "HM": "1:10",
+          "DIST_KM": 0.7,
+          "ACML_DIST": 23.2
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "청구",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 24
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "신당",
+          "HM": "1:10",
+          "DIST_KM": 0.7,
+          "ACML_DIST": 24.7
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "동묘앞",
+          "HM": "1:00",
+          "DIST_KM": 0.6,
+          "ACML_DIST": 25.3
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "창신",
+          "HM": "1:20",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 26.2
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "보문",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 27
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "안암",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 27.9
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "고려대",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 28.7
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "월곡",
+          "HM": "1:40",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 30.1
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "상월곡",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 30.9
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "돌곶이",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 31.7
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "석계",
+          "HM": "1:20",
+          "DIST_KM": 1,
+          "ACML_DIST": 32.7
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "태릉입구",
+          "HM": "1:10",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 33.5
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "화랑대",
+          "HM": "1:10",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 34.4
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "봉화산",
+          "HM": "1:20",
+          "DIST_KM": 0.7,
+          "ACML_DIST": 35.1
+        },
+        {
+          "SBWY_ROUT_LN": "6",
+          "SBWY_STNS_NM": "신내역",
+          "HM": "4:30",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 36.4
+        }
+      ]
+    }
+  }

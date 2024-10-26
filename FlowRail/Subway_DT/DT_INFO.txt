@@ -1,0 +1,22 @@
+DT-json은 1호선 (서울 ~ 청량리) , 2호선 , 3호선, 4호선
+
+[ 요청인자 ]
+
+KEY	            String(필수)	인증키	        OpenAPI 에서 발급된 인증키
+TYPE	        String(필수)	요청파일타입	xml : xml, xml파일 : xmlf, 엑셀파일 : xls, json파일 : json
+SERVICE	        String(필수)	서비스명	    StationDstncReqreTimeHm
+START_INDEX	    INTEGER(필수)	요청시작위치	정수 입력 (페이징 시작번호 입니다 : 데이터 행 시작번호)
+END_INDEX	    INTEGER(필수)	요청종료위치	정수 입력 (페이징 끝번호 입니다 : 데이터 행 끝번호)
+SBWY_ROUT_LN	STRING(선택)	호선	        문자열 입력
+SBWY_STNS_NM	STRING(선택)	역명	        문자열 입력
+
+[ 출력값 ]
+
+ist_total_count	                               총 데이터 건수 (정상조회 시 출력됨)
+RESULT.CODE	                                   요청결과 코드 (하단 메세지설명 참고)
+RESULT.MESSAGE	                               요청결과 메시지 (하단 메세지설명 참고)
+SBWY_ROUT_LN	                               호선
+SBWY_STNS_NM	                               역명
+HM	                                           시간(분)
+DIST_KM	                                       거리(km)
+ACML_DIST	                                   누계(km)

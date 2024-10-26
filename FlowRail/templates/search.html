@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowRail Search Page</title>
+</head>
+<body>
+
+    <form action = "/getsearch" method="post">
+    <input type="text" id="searchInput" name="stationName" placeholder="출발역을 입력하세요">
+    <p>1호선</p>
+    <input type="radio" name="line" id="line1" value="1001"/>
+    <p>2호선</p>
+    <input type="radio" name="line" id="line2" value="1002"/>
+    <p>신분당</p>
+    <input type="radio" name="line" id="Shinbundangline" value="1077"/>
+
+    <p>상행/내선</p>
+    <input type="radio" name="updnline" id="up" value="내선"/>
+    <p>하행/외선</p>
+    <input type="radio" name="updnline" id="dn" value="외선"/>
+    <button type="submit">검색</button>
+</form>
+
+
+<script>
+   document.getElementById('searchForm')
+</script>
+
+<strong>{{updn_check}} ㅣ {{train_number}}열차 , {{time}}초 남음 , {{arrivalcode}} ㅣ</strong>
+<strong>{{first_info}} , {{second_info}}</strong>
+</body>
+</html>

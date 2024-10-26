@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지하철 최단 경로</title>
+</head>
+<body>
+    <h1>지하철 최단 경로</h1>
+    <form method="POST">
+        <label for="startStn">출발역:</label>
+        <input type="text" id="startStn" name="startStn" required>
+        <br>
+        <label for="endStn">도착역:</label>
+        <input type="text" id="endStn" name="endStn" required>
+        <br>
+        <input type="submit" value="경로 찾기">
+    </form>
+
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if path %}
+    <h2>최단 경로 정보</h2>
+    <p>출발역: {{ start }}</p>
+    <p>도착역: {{ end }}</p>
+    <p>경로: {{ path|join(' -> ') }}</p>
+    <p>총 소요 시간: 
+        {% if hours > 0 %}{{ hours }}시간 {% endif %}
+        {% if minutes > 0 or hours > 0 %}{{ minutes }}분 {% endif %}
+        {{ seconds }}초
+    </p>
+    {% if transfers %}
+    <p>환승역: {{ transfers|join(', ') }}</p>
+    {% endif %}
+    {% endif %}
+</body>
+</html>

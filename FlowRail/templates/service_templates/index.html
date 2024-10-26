@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='index_style.css') }}" />
+    </head>
+    <body>
+        <div class="FlowRail-First">
+            <div>
+                <span class="Welcome-to">
+                    Welcome to
+                </span>
+                <span class="FlowRail">
+                    FlowRail
+                </span>
+                <span class="Flowrail-you-want">
+                    당신이 원했던 철도
+                </span>
+            </div>
+            <img src="{{ url_for('static', filename='images/First.png') }}">
+            <button class="startbtn" onclick="location.href='check-time'">
+                시작하기
+            </button>
+        </div>
+    </body>
+</html>

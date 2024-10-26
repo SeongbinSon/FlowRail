@@ -1,0 +1,23 @@
+.search {
+    position: relative;
+    width: 300px;
+}
+
+input {
+    width: 100px;
+    height: auto;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+button {
+    height: auto;
+    width: 60px;
+    background-color: aqua;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}

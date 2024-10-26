@@ -1,0 +1,558 @@
+.FlowRail-First {
+
+    width: 393px;
+    height: 852px;
+    flex-grow: 0;
+    background-color: #171717;
+}
+
+
+
+
+.real{
+position: absolute;
+left: 75px;
+top: 140px;
+width: 140px;
+height: 76; 
+font-family: Pretendard;
+font-size: 32px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: #fff;
+}
+
+.trailtime{
+    position: absolute;
+    left: 75px;
+    top: 180px;
+    width: 140px;
+    height: 76;
+    font-family: Pretendard;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    }
+
+.sub-name{
+    position: absolute;
+    left: 75px;
+    top: 225px;
+    width: 281px;
+    height: 24px;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    }
+
+.seoul-line1{
+    position: absolute;
+    top: 284px;
+    left: 54px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.line1-r{
+    position: absolute;
+    top: 313px;
+    left: 50px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #1713cd;
+}
+
+.line1-e{
+    position: absolute;
+    top: 306px;
+    left: 87;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line1-text {
+    position: absolute;
+    top: 309px;
+    left: 98px;
+    width: 12px;
+    height: 28px;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1713cd;
+}
+
+.seoul-line3{
+    position: absolute;
+    top: 373px;
+    left: 54px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.seoul-line5{
+    position: absolute;
+    top: 460px;
+    left: 54px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.seoul-line7{
+    position: absolute;
+    top: 544px;
+    left: 54px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.seoul-suinbundang{
+    position: absolute;
+    top: 637px;
+    left: 54px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.line3-r{
+    position: absolute;
+    top: 398px;
+    left: 50px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #ef2323;
+}
+
+.line3-e{
+    position: absolute;
+    top: 391px;
+    left: 87;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line3-text {
+    position: absolute;
+    top: 394px;
+    left: 97px;
+    width: 15px;
+    height: 28px;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ef2323;
+}
+
+.line5-r{
+    position: absolute;
+    top: 484px;
+    left: 50px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #201a66;
+}
+
+.line5-e{
+    position: absolute;
+    top: 477px;
+    left: 87;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line5-text {
+    position: absolute;
+    top: 480px;
+    left: 97px;
+    width: 15px;
+    height: 28px;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #201a66;
+}
+
+.line7-r{
+    position: absolute;
+    top: 568px;
+    left: 50px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #458900;
+}
+
+.line7-e{
+    position: absolute;
+    top: 561px;
+    left: 87;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line7-text {
+    position: absolute;
+    top: 564px;
+    left: 97px;
+    width: 15px;
+    height: 28px;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #458900;
+}
+
+.line-suinbundang-r{
+    position: absolute;
+    top: 661px;
+    left: 50px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #c9e41f;
+}
+
+.line-suinbundang-e{
+    position: absolute;
+    top: 654px;
+    left: 87;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line-suinbundang-text {
+    position: absolute;
+    top: 667px;
+    left: 91px;
+    width: 26px;
+    height: 7px;
+    font-family: Pretendard;
+    font-size: 6px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+.seoul-line2{
+    position: absolute;
+    top: 284px;
+    left: 210px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.line2-r{
+    position: absolute;
+    top: 313px;
+    left: 206px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #19981e;
+}
+
+.line2-e{
+    position: absolute;
+    top: 306px;
+    left: 243px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line2-text {
+    position: absolute;
+    top: 309px;
+    left: 253px;
+    width: 12px;
+    height: 28px;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #19981e;
+}
+
+button.line2-btn{
+    position: absolute;
+    background-image: url(./Right.png);
+    background-color: none;
+    border: none;
+    top: 311px;
+    left: 310px;
+    height: 0px;
+    width: 0px;
+}
+
+.seoul-line4{
+    position: absolute;
+    top: 373px;
+    left: 210px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.line4-r{
+    position: absolute;
+    top: 398px;
+    left: 206px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #0099a3;
+}
+
+.line4-e{
+    position: absolute;
+    top: 391px;
+    left: 243px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line4-text {
+    position: absolute;
+    top: 394px;
+    left: 252px;
+    width: 12px;
+    height: 28px;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0099a3;
+}
+
+.seoul-line6{
+    position: absolute;
+    top: 459px;
+    left: 210px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.line6-r{
+    position: absolute;
+    top: 483px;
+    left: 206px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #a34e00;
+}
+
+.line6-e{
+    position: absolute;
+    top: 476px;
+    left: 243px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line6-text {
+    position: absolute;
+    top: 479px;
+    left: 252px;
+    width: 15px;
+    height: 28px;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a34e00;
+}
+
+.seoul-line8{
+    position: absolute;
+    top: 543px;
+    left: 210px;
+    width: 95px;
+    height: 17px;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.line8-r{
+    position: absolute;
+    top: 567px;
+    left: 206px;
+    width: 109px;
+    height: 20px;
+    border-radius: 31px;
+    background-color: #ca037a;
+}
+
+.line8-e{
+    position: absolute;
+    top: 560px;
+    left: 243px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+}
+
+.line8-text {
+    position: absolute;
+    top: 563px;
+    left: 252px;
+    width: 15px;
+    height: 28px;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ca037a;
+}

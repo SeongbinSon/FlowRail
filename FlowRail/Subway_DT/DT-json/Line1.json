@@ -1,0 +1,81 @@
+{
+    "StationDstncReqreTimeHm": {
+      "list_total_count": 10,
+      "RESULT": {
+        "CODE": "INFO-000",
+        "MESSAGE": "정상 처리되었습니다"
+      },
+      "row": [
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "서울역",
+          "HM": "0:00",
+          "DIST_KM": 0,
+          "ACML_DIST": 0
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "시청",
+          "HM": "2:00",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 1.1
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "종각",
+          "HM": "2:00",
+          "DIST_KM": 1,
+          "ACML_DIST": 2.1
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "종로3가",
+          "HM": "1:30",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 2.9
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "종로5가",
+          "HM": "1:30",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 3.8
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "동대문",
+          "HM": "1:30",
+          "DIST_KM": 0.8,
+          "ACML_DIST": 4.6
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "동묘앞",
+          "HM": "1:00",
+          "DIST_KM": 0.6,
+          "ACML_DIST": 5.2
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "신설동",
+          "HM": "1:30",
+          "DIST_KM": 0.7,
+          "ACML_DIST": 5.9
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "제기동",
+          "HM": "1:30",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 6.8
+        },
+        {
+          "SBWY_ROUT_LN": "1",
+          "SBWY_STNS_NM": "청량리",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 7.8
+        }
+      ]
+    }
+  }

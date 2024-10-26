@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowRail Form Page</title>
+</head>
+<body>
+
+<form action = "/getform" method="post">
+    <input type="text" id="searchInput" placeholder="역을 검색하세요..." name = "stationName">
+    <button type="submit">검색</button>
+
+</form>
+<script>
+   document.getElementById('searchForm')
+</script>
+<strong>{{time}}초 남음</strong>
+<strong>{{firstMsg}},</strong>
+<strong>{{secondMsg}},</strong>
+<strong>{{line_check_updn}}, </strong>
+<strong>{{testord}}, </strong>
+<strong>{{SW_INFOLIST}}</strong>
+</body>
+</html>

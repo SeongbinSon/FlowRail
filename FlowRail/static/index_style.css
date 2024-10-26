@@ -1,0 +1,81 @@
+.FlowRail-First {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 393px;
+    height: 852px;
+    flex-grow: 0;
+    background-color: #171717;
+}
+.FlowRail-First div{
+    position: absolute;
+    left: 46px;
+    top: 129px;
+    display: flex;
+    flex-direction: column;
+}
+.Welcome-to {
+    width: 249px;
+    height: 38px;
+    font-family: Pretendard;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+.FlowRail {
+    width: 140px;
+    height: 38px;
+    font-family: Pretendard;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.Flowrail-you-want {
+    width: 281px;
+    height: 24px;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.startbtn{
+    position:absolute;
+    text-align:center;
+    top: 720px;
+    width: 182px;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    border-radius: 40px;
+    border: solid 1px #fff;
+    padding: 0px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+img{
+    position: absolute;
+    text-align: center;
+    top: 314;
+}

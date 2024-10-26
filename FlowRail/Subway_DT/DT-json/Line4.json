@@ -1,0 +1,193 @@
+{
+    "StationDstncReqreTimeHm": {
+      "list_total_count": 26,
+      "RESULT": {
+        "CODE": "INFO-000",
+        "MESSAGE": "정상 처리되었습니다"
+      },
+      "row": [
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "당고개",
+          "HM": "0:00",
+          "DIST_KM": 0,
+          "ACML_DIST": 0
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "상계",
+          "HM": "1:30",
+          "DIST_KM": 1.2,
+          "ACML_DIST": 1.2
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "노원",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 2.2
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "창동",
+          "HM": "2:00",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 3.6
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "쌍문",
+          "HM": "1:30",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 4.9
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "수유",
+          "HM": "2:00",
+          "DIST_KM": 1.5,
+          "ACML_DIST": 6.4
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "미아",
+          "HM": "1:30",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 7.8
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "미아사거리 ",
+          "HM": "2:00",
+          "DIST_KM": 1.5,
+          "ACML_DIST": 9.3
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "길음",
+          "HM": "1:30",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 10.6
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "성신여대입구",
+          "HM": "2:00",
+          "DIST_KM": 1.4,
+          "ACML_DIST": 12
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "한성대입구",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 13
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "혜화",
+          "HM": "1:30",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 13.9
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "동대문",
+          "HM": "2:00",
+          "DIST_KM": 1.5,
+          "ACML_DIST": 15.4
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "동대문역사문화공원",
+          "HM": "1:00",
+          "DIST_KM": 0.7,
+          "ACML_DIST": 16.1
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "충무로",
+          "HM": "2:00",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 17.4
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "명동",
+          "HM": "1:00",
+          "DIST_KM": 0.7,
+          "ACML_DIST": 18.1
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "회현",
+          "HM": "1:00",
+          "DIST_KM": 0.7,
+          "ACML_DIST": 18.8
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "서울역",
+          "HM": "1:30",
+          "DIST_KM": 0.9,
+          "ACML_DIST": 19.7
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "숙대입구",
+          "HM": "1:30",
+          "DIST_KM": 1,
+          "ACML_DIST": 20.7
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "삼각지",
+          "HM": "1:30",
+          "DIST_KM": 1.2,
+          "ACML_DIST": 21.9
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "신용산",
+          "HM": "1:00",
+          "DIST_KM": 0.7,
+          "ACML_DIST": 22.6
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "이촌",
+          "HM": "1:30",
+          "DIST_KM": 1.3,
+          "ACML_DIST": 23.9
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "동작",
+          "HM": "3:00",
+          "DIST_KM": 2.7,
+          "ACML_DIST": 26.6
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "총신대입구",
+          "HM": "2:30",
+          "DIST_KM": 1.8,
+          "ACML_DIST": 28.4
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "사당",
+          "HM": "1:30",
+          "DIST_KM": 1.1,
+          "ACML_DIST": 29.5
+        },
+        {
+          "SBWY_ROUT_LN": "4",
+          "SBWY_STNS_NM": "남태령",
+          "HM": "1:30",
+          "DIST_KM": 2.2,
+          "ACML_DIST": 31.7
+        }
+      ]
+    }
+  }

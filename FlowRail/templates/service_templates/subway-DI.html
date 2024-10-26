@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='subway-DI.css') }}" />
+
+    </head>
+    <body>
+        <div class="FlowRail-First">
+            <div class="station-background" value="{{line}}"></div>
+            <div class="line2-e-201" value="{{line}}"></div>
+            <div class="line2-t-201" value="{{line}}">{{line}}</div>
+            <span class="station-name">{{name}}</span>
+            <span class="station-t-line2">{{trainlinenum}}</span>
+            <strong class="infomation-t-1">{{train_number}} 열차</strong>
+            <span class="infomation-station-now">{{first_info}}</span>
+            <span class="car-now-station">{{second_info}}</span>
+            <span class="car-now-check">{{arrivalcode}}</span>
+            <span class="infomation-t-2">{{second_infomation_test}} 열차</span>
+            <span class="infomation-station-now-2">{{second_first_info}}</span>
+            <span class="car-now-station-2">{{two_second_info}}</span>
+            <span class="car-now-check-2">{{sec_arvlcode}}</span>
+
+        </div>
+    </body>
+</html>
