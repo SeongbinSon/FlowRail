@@ -84,6 +84,7 @@ def test_subway_DT():
 def test_subway_DT_TEST():
     return render_template('./service_templates/DT_TEST.html')
 
+
 # /* ------------------------------------------------------------------------------------------------ */
 
 @app.route('/getform',methods=['POST', 'GET'])
@@ -465,9 +466,9 @@ def direction():
         print(f"환승역: {', '.join(best_transfers)}")
 
         session['path'] = station_path
-        session['hours'] = hours
-        session['minutes'] = minutes
-        session['seconds'] = seconds
+        session['hours'] = str(hours)
+        session['minutes'] = str(minutes)
+        session['seconds'] = str(seconds)
         session['start'] = start
         session['end'] = end
         session['best_transfers'] = best_transfers
@@ -487,13 +488,15 @@ def direction():
 def get_train_num_and_arrivaltime(name):
     arrival_First_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/0/40/"+name
     arrival_Second_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/1/40/"+name
+    arrival_test = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/1/40/강남"
 
     arrival_first = requests.get(arrival_First_search)
     arrival_second = requests.get(arrival_Second_search)
+    arrival_test = requests.get(arrival_test)
 
     arrival_first = arrival_first.json()
     arrival_second = arrival_second.json()
-
+    arrival_test = arrival_test.json()
 
 
 @app.route("/step/<int:num>")
@@ -508,9 +511,24 @@ def step(num):
     best_transfers = session.get('best_transfers')
     arrival_first = get_train_num_and_arrivaltime(start)
     arrival_second = get_train_num_and_arrivaltime(start)
+    arrival_test = get_train_num_and_arrivaltime(start)
+
+    print("-------------")
+    print(station_path)
+    print(hours)
+    print(minutes)
+    print(seconds)
+    print(start)
+    print(end)
+    print(best_transfers)
+    print(arrival_first)
+    print(arrival_second)
+    print(arrival_test)
+    print("-------------")
+
 
     return render_template('./service_templates/step.html',
-                            index = str(num),
+                            index = str(num+1),
                             start=start,
                             end=end, 
                             path=station_path,
