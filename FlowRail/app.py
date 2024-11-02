@@ -484,6 +484,70 @@ def direction():
                                transfers=best_transfers)
     else:
         return render_template("./service_templates/direction.html")
+# /* ------------------------------------------------------------------------------------------------ */
+
+@app.route("/direction-test", methods=["POST", "GET"])
+def direction():
+    global G
+    if request.method == "POST":
+        start = request.form["startStn"]
+        end = request.form["endStn"]
+
+        # DataFrame을 그래프로 변환
+
+        # 출발역과 도착역의 모든 가능한 라인 조합에 대해 최단 경로 계산
+        start_lines = [line for station, line in G.nodes() if station == start]
+        end_lines = [line for station, line in G.nodes() if station == end]
+        print(start_lines, end_lines)
+
+        best_path = None
+        best_time = float('infinity')
+        best_transfers = []
+
+        for start_line in start_lines:
+            for end_line in end_lines:
+                path, total_seconds, transfers = dijkstra(G, (start, start_line), (end, end_line))
+                if path and total_seconds < best_time:
+                    best_path = path
+                    best_time = total_seconds
+                    best_transfers = transfers
+
+        if best_path is None:
+            error_message = "경로를 찾을 수 없습니다."
+            return render_template("./service_templates/direction-test.html", error=error_message)
+
+        # 소요 시간을 시, 분, 초로 변환
+        hours, remainder = divmod(best_time, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        
+        station_path = [station for station, _ in best_path]
+        # 경로에서 역 이름만 추출
+        print(f"최단 경로: {' -> '.join(station_path)}")
+        print(f"총 소요 시간: {hours}시간 {minutes}분 {seconds}초")
+        print(f"환승역: {', '.join(best_transfers)}")
+
+        session['path'] = station_path
+        session['hours'] = str(hours)
+        session['minutes'] = str(minutes)
+        session['seconds'] = str(seconds)
+        session['start'] = start
+        session['end'] = end
+        session['best_transfers'] = best_transfers
+
+
+        return render_template("./service_templates/direction-test.html", 
+                               start=start, 
+                               end=end, 
+                               path=station_path,
+                               hours=hours,
+                               minutes=minutes,
+                               seconds=seconds,
+                               transfers=best_transfers)
+    else:
+        return render_template("./service_templates/direction.html")
+    
+# /* ------------------------------------------------------------------------------------------------ */
+
 
 def get_train_num_and_arrivaltime(name):
     arrival_First_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/0/40/"+name

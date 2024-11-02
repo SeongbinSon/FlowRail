@@ -2,26 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='step.css') }}" />
     </head>
     <body>
-        {% if index %}
-        {{index}}번째 스텝
-        {% endif %}
-        ㅇㅇ 역 ㅇㅇ방면 승강장으로 이동하세요
-        열차도착까지 남은시간 N분
-        탑승버튼
-
-        ->
-        ㅇㅇ역에서 ㅇㅇ역까지 이동 중
-        현재 ㅇㅇ 역
-        남은시간 ㅇㅇ 분
-
-        -> 
-        다음역(건대입구)에서 하차하세요
-        ->
-        ㅇㅇ 역 ㅇㅇ방면 승강장으로 이동하세요
-        열차도착까지 남은시간 N분
-        탑승버튼
+        <div class="FlowRail-step">
+            <div class="start-end-text">출발/도착역</div>
+        </div>
         <a href="/step/{{index}}"
         
         <a>다음</a>

@@ -1,4 +1,4 @@
-.FlowRail-step{
+.FlowRail-direction{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,4 +21,20 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.rec-1{
+    width: 341px;
+    height: 132px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.rec-2{
+    width: 341px;
+    height: 132px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    flex-shrink: 0;
 }
