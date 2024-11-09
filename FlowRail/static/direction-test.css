@@ -1,40 +1,19 @@
-.FlowRail-direction{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    flex-grow: 0;
-    background-color: #171717;
+.background{
+    width: 393px;
+    height: 852px;
+    position: relative;
+    background: #171717
 }
 
 .start-end-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 171px;
     height: 38px;
-    height: 100%;
-    color: #FFF;
-    font-family: Pretendard;
+    left: 74px;
+    top: 144px;
+    position: absolute;
+    color: white;
     font-size: 32px;
-    font-style: normal;
+    font-family: Pretendard;
     font-weight: 700;
-    line-height: normal;
-}
-
-.rec-1{
-    width: 341px;
-    height: 132px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    flex-shrink: 0;
-}
-
-.rec-2{
-    width: 341px;
-    height: 132px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    flex-shrink: 0;
+    word-wrap: break-word"
 }

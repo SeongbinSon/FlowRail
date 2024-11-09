@@ -186,18 +186,7 @@ def getsubway():
     elif line == "1002" and updnline == '하행':
         updnline = '외선'
     
-    # subwayList = RTSA_get_info['realtimeArrivalList']
-    # ST = 0
-    # sec_ST = 0
-    # M_ST = 2000
-    # sec_M_ST = 2000
-    # for i in range(len(subwayList)):
-    # test = int(subwayList[i]['barvlDt'])
-    # if test <= M_ST:
-    #         ST = i
-    #         M_ST = int(subwayList[i]['barvlDt'])
-    
-    # print(ST, M_ST)
+
     # 2호선 내선순환 조회
     for Timelist in range(len(RTSA_get_info['realtimeArrivalList'])):
         if RTSA_get_info['realtimeArrivalList'][Timelist]['updnLine'] == updnline or  RTSA_get_info['realtimeArrivalList'][Timelist]['updnLine'] == inner_circle_line_to_up_line or RTSA_get_info['realtimeArrivalList'][Timelist]['updnLine'] == outer_circle_line_to_dn_line:
@@ -487,7 +476,7 @@ def direction():
 # /* ------------------------------------------------------------------------------------------------ */
 
 @app.route("/direction-test", methods=["POST", "GET"])
-def direction():
+def directiontest():
     global G
     if request.method == "POST":
         start = request.form["startStn"]
@@ -544,16 +533,18 @@ def direction():
                                seconds=seconds,
                                transfers=best_transfers)
     else:
-        return render_template("./service_templates/direction.html")
+        return render_template("./service_templates/direction-test.html")
     
 # /* ------------------------------------------------------------------------------------------------ */
 
 
-def get_train_num_and_arrivaltime(name):
-    arrival_First_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/0/40/"+name
-    arrival_Second_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/1/40/"+name
-    arrival_test = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/1/40/강남"
 
+
+
+def get_train_num_and_arrivaltime(name):
+    arrival_First_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/0/40/",name
+    arrival_Second_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/1/40/",name
+    arrival_test = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/1/40/강남"
     arrival_first = requests.get(arrival_First_search)
     arrival_second = requests.get(arrival_Second_search)
     arrival_test = requests.get(arrival_test)
