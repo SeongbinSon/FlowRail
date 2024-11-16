@@ -7,7 +7,7 @@
           .background{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             width: 100%;
             height: 100vh;
@@ -24,11 +24,12 @@
           }
 
           .title {
-            width: 171px;
-            height: 38px;
+            width: 400px;
+            height: 40px;
             left: 74px;
             top: 144px;
-            font-size: 32px;
+            font-size: 60px;
+            font-family: Pretendard;
             color: white;
           }
 
@@ -44,28 +45,6 @@
                 display: inline-flex;
             }
 
-            .search-icon {
-                width: 75px;
-                height: 75px;
-                position: relative;
-            }
-
-            .search-icon-circle {
-                width: 70px;
-                height: 70px;
-                background: white;
-                border-radius: 9999px;
-            }
-
-            .search-icon-handle {
-                width: 3.46px;
-                height: 3.46px;
-                left: 15.04px;
-                top: 15.50px;
-                position: absolute;
-                border: 1.50px white solid;
-            }
-
             .upper-gray-box {
               width: 85%;
               height: 18%;
@@ -77,7 +56,7 @@
               justify-content: space-between;
               padding:5%;
             }
-            .upper-gray-box input{
+            .upper-gray-box form input{
               width:90%;
               background-color: #2F2F2F;
               border:none;
@@ -86,7 +65,15 @@
               padding-left:10%;
               font-size: 200%;
             }
-
+            
+            .upper-gray-box form{
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between
+            }
             .lower-gray-box {
               width: 85%;
               height: 30%;
@@ -102,24 +89,51 @@
 
             .arrow{
               text-align: center;
-              font-size: 300%;
+              font-family: Pretendard;
+              font-size: 80px;
               color:white;
             }
             .stn_lst{
               width: 40%;
+              font-size: 40px;
               text-align: center;
               color: white;
+              font-family: Pretendard;
             }
             .info{
               width: 40%;
+              font-size: 40px;
               text-align: center;
               color: white;
+              font-family: Pretendard;
             }
             .arrow2{
-              width:10%;
               text-align: center;
               align-items: center;
-              font-size: 300% 100%;
+              font-size: 80px;
+              color: white;
+            }
+            .submit{
+              background-color: white;
+              width: 10%;
+              height: 10%;
+              border-radius: 10px;
+              font-size: 200%;
+            }
+            .btn{
+              width: 10%;
+              height: 10%;
+              color: black;
+              font-size: 20px;
+              font-family: Pretendard;
+              border-radius: 10px;
+            }
+            .search-f{
+              font-family: Pretendard;
+              color: white;
+            }
+            .search-c{
+              font-family: Pretendard;
               color: white;
             }
         </style>
@@ -132,53 +146,32 @@
                   <div class="search-icon-handle"></div>
               </div>
               <div class="title">출발/도착역 입력</div>
-          </div> 
+          </div>
             <div class="upper-gray-box">
-                <input type="text" name="start_station" placeholder="출발역을 입력하세요.">
+              <form method="POST">
+                <input class="search-f" type="text" id="startStn" name="startStn" for="startStn" required placeholder="출발역을 입력하세요.">
                 <div class="arrow">↓</div>
-                <input type="text" name="end_station" placeholder="도착역을 입력하세요">
+                <input class="search-c"type="text" id="endStn" name="endStn" for="endStn" required placeholder="도착역을 입력하세요">
+                <button class="btn"type="submit" value="경로 찾기">검색</button>
+              </form>
             </div>
-            <div class="lower-gray-box">
-               <div class="stn_lst">
-                  <div>시청</div>
-                  <div>시청</div>
-                  <div>시청</div>
-                  <div>시청</div>
-                  <div>시청</div>
-                  <div>시청</div>
-                  <div>시청</div>
-                  <div>시청</div>
-                  <div>시청</div>
-                  <div>시청</div>
-               </div>
-               <div class="arrow2">↓</div>
-               <div class="info">
-                  <div>환승</div>
-                  <div>없음</div>
-                  <div>총 소요 시간</div>
-                  <div>10시간10분10초</div>
-               </div>
-            </div>
-        
             {% if path %}
-            <div class="path-info common-text container">경로: {{ path|join(' -> ') }}</div>
-            <div class="info-text common-text container start-station">출발역 :<br/>{{start}}</div>
-            <div class="info-text common-text container end-station">도착역 :<br/>{{end}}</div>
-            <div class="info-text container total-time">
-                <span class="common-text">총 소요 시간<br></span>
-                <span class="common-text highlight-text">
-                    {% if hours > 0 %}{{ hours }}시간 {% endif %}
+            <div class="lower-gray-box">
+                <div class="stn_lst">
+                  <div>{{ path|join(' -> ') }}</div>
+                </div>
+                <div class="arrow2">↓</div>
+               <div class="info">
+                  {% if transfers %}
+                  <div>환승</div>
+                  <div>{{ transfers|join(', ') }}</div>
+                  {% endif %}
+                  <div>총 소요 시간</div>
+                  <div>{% if hours > 0 %}{{ hours }}시간 {% endif %}
                     {% if minutes > 0 or hours > 0 %}{{ minutes }}분 {% endif %}
-                    {{ seconds }}초
-                </span>
+                    {{ seconds }}초</div>
+               </div>
             </div>
-            {% if transfers %}
-            <div class="info-text container transfer-info">
-                <span class="common-text">환승<br></span>
-                <span class="common-text highlight-text">환승역: {{ transfers|join(', ') }}</span>
-            </div> 
             {% endif %}
-            {% endif %}
-        </div>
     </body>
 </html>

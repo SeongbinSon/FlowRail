@@ -461,6 +461,8 @@ def direction():
         session['start'] = start
         session['end'] = end
         session['best_transfers'] = best_transfers
+        print(start)
+        print(end)
 
 
         return render_template("./service_templates/direction.html", 
@@ -475,7 +477,7 @@ def direction():
         return render_template("./service_templates/direction.html")
 # /* ------------------------------------------------------------------------------------------------ */
 
-@app.route("/direction-test", methods=["POST", "GET"])
+@app.route("/subway-find", methods=["POST", "GET"])
 def directiontest():
     global G
     if request.method == "POST":
@@ -503,7 +505,7 @@ def directiontest():
 
         if best_path is None:
             error_message = "경로를 찾을 수 없습니다."
-            return render_template("./service_templates/direction-test.html", error=error_message)
+            return render_template("./service_templates/subway-find.html", error=error_message)
 
         # 소요 시간을 시, 분, 초로 변환
         hours, remainder = divmod(best_time, 3600)
@@ -524,7 +526,7 @@ def directiontest():
         session['best_transfers'] = best_transfers
 
 
-        return render_template("./service_templates/direction-test.html", 
+        return render_template("./service_templates/subway-find.html", 
                                start=start, 
                                end=end, 
                                path=station_path,
@@ -533,7 +535,7 @@ def directiontest():
                                seconds=seconds,
                                transfers=best_transfers)
     else:
-        return render_template("./service_templates/direction-test.html")
+        return render_template("./service_templates/subway-find.html")
     
 # /* ------------------------------------------------------------------------------------------------ */
 
