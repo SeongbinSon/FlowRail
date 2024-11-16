@@ -556,3 +556,23 @@ button.line2-btn{
     text-align: left;
     color: #ca037a;
 }
+
+.gotofind {
+    position:absolute;
+    text-align:center;
+    top: 80%;
+    height: 30%;
+    width: 182px;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    border-radius: 40px;
+    border: solid 1px #fff;
+    padding: 0px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
