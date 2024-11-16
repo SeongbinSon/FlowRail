@@ -56,9 +56,6 @@ number_line = {
 def hello_world():
     return render_template('form.html', arrivaltime = None , RTSA_firstMsg = None , RTSA_secondMsg = None , SW_INFOLIST = None)
 
-@app.route('/subway')
-def test_subway():
-    return render_template('search.html')
 
 @app.route('/first')
 def test_first_page():
@@ -75,17 +72,6 @@ def test_station_search_page():
         return render_template('./service_templates/station-search.html',lineno = lineno)
     else:
         return render_template('./service_templates/station-search.html',lineno = '1')
-@app.route('/DI')
-def test_subway_DI():
-    return render_template('./service_templates/subway-DI.html')
-
-@app.route('/DT')
-def test_subway_DT():
-    return render_template('./service_templates/DT.html')
-
-@app.route('/DT_TEST')
-def test_subway_DT_TEST():
-    return render_template('./service_templates/DT_TEST.html')
 
 
 # /* ------------------------------------------------------------------------------------------------ */
@@ -265,47 +251,6 @@ def getsubway():
                         sec_arvlcode = "운행중"
                     break
 
-    # [/subway] RTSA Command Terminal
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print("/*                                     RTSA Command Terminal                                        */")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print(" ")
-    print("열차도착예정시간(arrivaltime)")
-    print(arrivaltime)
-    print(" ")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print(" ")
-    print("도착코드 (arvlCd)")
-    print(arvlcode)
-    print(" ")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print(" ")
-    print("열차번호 (btrainNm)")
-    print(infomation_test)
-    print(" ")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print(" ")
-    print("상하행선 구분 (updnLine)")
-    print(updnline_checker)
-    print(" ")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print(" ")
-    print("첫번째 도착 메시지 (arvlMsg2)")
-    print(first_info)
-    print(" ")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print(" ")
-    print("두번째 도착 메시지 (arvlMsg3)")
-    print(second_info)
-    print(" ")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print("/*                                                                                                  */")
-    print("/* ------------------------------------------------------------------------------------------------ */")
-    print(infomation_test) # 열차 번호
-    print(first_info)
-    print(second_info) # 현재 역
-    print(arvlcode) # 도착 코드
 
     return render_template('./service_templates/subway-DI.html', 
                            name = name, 
@@ -479,13 +424,14 @@ def direction():
                                transfers=best_transfers)
     else:
         return render_template("./service_templates/direction.html")
+    
 # /* ------------------------------------------------------------------------------------------------ */
 
 @app.route("/subway-find", methods=["POST", "GET"])
 def directiontest():
     global G
-    start_time = time.time()
     if request.method == "POST":
+        start_time = time.time()
         start = request.form["startStn"]
         end = request.form["endStn"]
 
@@ -518,9 +464,6 @@ def directiontest():
         
         station_path = [station for station, _ in best_path]
         # 경로에서 역 이름만 추출
-        print(f"최단 경로: {' -> '.join(station_path)}")
-        print(f"총 소요 시간: {hours}시간 {minutes}분 {seconds}초")
-        print(f"환승역: {', '.join(best_transfers)}")
 
         session['path'] = station_path
         session['hours'] = str(hours)
@@ -529,7 +472,7 @@ def directiontest():
         session['start'] = start
         session['end'] = end
         session['best_transfers'] = best_transfers
-
+        
 
         end_time = time.time()
 
@@ -580,18 +523,6 @@ def step(num):
     arrival_second = get_train_num_and_arrivaltime(start)
     arrival_test = get_train_num_and_arrivaltime(start)
 
-    print("-------------")
-    print(station_path)
-    print(hours)
-    print(minutes)
-    print(seconds)
-    print(start)
-    print(end)
-    print(best_transfers)
-    print(arrival_first)
-    print(arrival_second)
-    print(arrival_test)
-    print("-------------")
 
 
     return render_template('./service_templates/step.html',
