@@ -3,33 +3,182 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="{{ url_for('static', filename='direction-test.css') }}" />
+        <style>
+          .background{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: #171717;
+
+          }
+          .title-container{
+            display: flex;
+            margin-top: 20%;
+            margin-bottom: 10%;
+            width: 90%;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
+
+          .title {
+            width: 171px;
+            height: 38px;
+            left: 74px;
+            top: 144px;
+            font-size: 32px;
+            color: white;
+          }
+
+            .search-icon-container {
+                width: 100px;
+                height: 100px;
+                padding: 3px 2.50px 2.04px 3px;
+                left: 39px;
+                top: 151px;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+                display: inline-flex;
+            }
+
+            .search-icon {
+                width: 75px;
+                height: 75px;
+                position: relative;
+            }
+
+            .search-icon-circle {
+                width: 70px;
+                height: 70px;
+                background: white;
+                border-radius: 9999px;
+            }
+
+            .search-icon-handle {
+                width: 3.46px;
+                height: 3.46px;
+                left: 15.04px;
+                top: 15.50px;
+                position: absolute;
+                border: 1.50px white solid;
+            }
+
+            .upper-gray-box {
+              width: 85%;
+              height: 18%;
+              background-color: #797979;
+              border-radius: 30px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              padding:5%;
+            }
+            .upper-gray-box input{
+              width:90%;
+              background-color: #2F2F2F;
+              border:none;
+              height: 15%;
+              border-radius: 10px;
+              padding-left:10%;
+              font-size: 200%;
+            }
+
+            .lower-gray-box {
+              width: 85%;
+              height: 30%;
+              background-color: #797979;
+              border-radius: 30px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding:5%;
+              margin-top:10%;
+            }
+
+            .arrow{
+              text-align: center;
+              font-size: 300%;
+              color:white;
+            }
+            .stn_lst{
+              width: 40%;
+              text-align: center;
+              color: white;
+            }
+            .info{
+              width: 40%;
+              text-align: center;
+              color: white;
+            }
+            .arrow2{
+              width:10%;
+              text-align: center;
+              align-items: center;
+              font-size: 300% 100%;
+              color: white;
+            }
+        </style>
     </head>
     <body>
         <div class="background">
-            <div style="width: 171px; height: 38px; left: 74px; top: 144px; position: absolute; color: white; font-size: 32px; font-family: Pretendard; font-weight: 700; word-wrap: break-word">출발/도착역 입력</div>
-            <div style="width: 341px; height: 132px; left: 26px; top: 245px; position: absolute; background: #797979; border-radius: 20px"></div>
-            <div style="width: 341px; height: 333px; left: 25px; top: 395px; position: absolute; background: #797979; border-radius: 20px"></div>
-            <div style="width: 24px; height: 24px; padding-top: 3px; padding-bottom: 2.04px; padding-left: 3px; padding-right: 2.50px; left: 39px; top: 151px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-              <div style="width: 18.50px; height: 18.96px; position: relative">
-                <div style="width: 16px; height: 16px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 9999px"></div>
-                <div style="width: 3.46px; height: 3.46px; left: 15.04px; top: 15.50px; position: absolute; border: 1.50px white solid"></div>
+          <div class="title-container">
+              <div class="search-icon">
+                  <div class="search-icon-circle"></div>
+                  <div class="search-icon-handle"></div>
               </div>
+              <div class="title">출발/도착역 입력</div>
+          </div> 
+            <div class="upper-gray-box">
+                <input type="text" name="start_station" placeholder="출발역을 입력하세요.">
+                <div class="arrow">↓</div>
+                <input type="text" name="end_station" placeholder="도착역을 입력하세요">
             </div>
-            <div style="width: 310px; height: 26px; left: 40px; top: 261px; position: absolute; background: #2F2F2F; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset; border-radius: 76px"></div>
-            <div style="width: 310px; height: 26px; left: 40px; top: 335px; position: absolute; background: #2F2F2F; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset; border-radius: 76px"></div>
-            
+            <div class="lower-gray-box">
+               <div class="stn_lst">
+                  <div>시청</div>
+                  <div>시청</div>
+                  <div>시청</div>
+                  <div>시청</div>
+                  <div>시청</div>
+                  <div>시청</div>
+                  <div>시청</div>
+                  <div>시청</div>
+                  <div>시청</div>
+                  <div>시청</div>
+               </div>
+               <div class="arrow2">↓</div>
+               <div class="info">
+                  <div>환승</div>
+                  <div>없음</div>
+                  <div>총 소요 시간</div>
+                  <div>10시간10분10초</div>
+               </div>
+            </div>
+        
             {% if path %}
-            <div style="width: 124px; height: 263px; left: 46px; top: 414px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: Pretendard; font-weight: 700; word-wrap: break-word">경로: {{ path|join(' -> ') }}</div>
-            <div style="width: 184px; height: 26px; left: 185px; top: 476px; position: absolute; color: white; font-size: 16px; font-family: Pretendard; font-weight: 700; word-wrap: break-word">출발역 :<br/>{{start}}</div>
-            <div style="width: 184px; height: 26px; left: 186px; top: 519px; position: absolute; color: white; font-size: 16px; font-family: Pretendard; font-weight: 700; word-wrap: break-word">도착역 :<br/>{{end}}</div>
-            <div style="width: 184px; height: 26px; left: 184px; top: 563px; position: absolute"><span style="color: white; font-size: 16px; font-family: Pretendard; font-weight: 700; word-wrap: break-word">총 소요 시간<br></span><span style="color: #4EEF4E; font-size: 16px; font-family: Pretendard; font-weight: 700; word-wrap: break-word">
-                {% if hours > 0 %}{{ hours }}시간 {% endif %}
-                {% if minutes > 0 or hours > 0 %}{{ minutes }}분 {% endif %}
-                {{ seconds }}초</span>
+            <div class="path-info common-text container">경로: {{ path|join(' -> ') }}</div>
+            <div class="info-text common-text container start-station">출발역 :<br/>{{start}}</div>
+            <div class="info-text common-text container end-station">도착역 :<br/>{{end}}</div>
+            <div class="info-text container total-time">
+                <span class="common-text">총 소요 시간<br></span>
+                <span class="common-text highlight-text">
+                    {% if hours > 0 %}{{ hours }}시간 {% endif %}
+                    {% if minutes > 0 or hours > 0 %}{{ minutes }}분 {% endif %}
+                    {{ seconds }}초
+                </span>
+            </div>
             {% if transfers %}
-            <div style="width: 184px; height: 26px; left: 185px; top: 522px; position: absolute"><span style="color: white; font-size: 16px; font-family: Pretendard; font-weight: 700; word-wrap: break-word">환승<br></span><span style="color: #4EEF4E; font-size: 16px; font-family: Pretendard; font-weight: 700; word-wrap: break-word">환승역: {{ transfers|join(', ') }}</span></div> 
+            <div class="info-text container transfer-info">
+                <span class="common-text">환승<br></span>
+                <span class="common-text highlight-text">환승역: {{ transfers|join(', ') }}</span>
+            </div> 
             {% endif %}
             {% endif %}
-          </div>
-          </div>
-    </div>
+        </div>
+    </body>
+</html>
