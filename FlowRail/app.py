@@ -3,6 +3,9 @@ import requests
 import pandas as pd
 import networkx as nx
 from collections import defaultdict
+import time
+
+
 
 app = Flask(__name__)
 app.secret_key = 'test_session_key'
@@ -416,6 +419,7 @@ G = create_graph_from_df(df)
 
 @app.route("/direction", methods=["POST", "GET"])
 def direction():
+
     global G
     if request.method == "POST":
         start = request.form["startStn"]
@@ -480,6 +484,7 @@ def direction():
 @app.route("/subway-find", methods=["POST", "GET"])
 def directiontest():
     global G
+    start_time = time.time()
     if request.method == "POST":
         start = request.form["startStn"]
         end = request.form["endStn"]
@@ -525,6 +530,11 @@ def directiontest():
         session['end'] = end
         session['best_transfers'] = best_transfers
 
+
+        end_time = time.time()
+
+        execution_time = end_time - start_time
+        print(f"Execution time: {execution_time} seconds")
 
         return render_template("./service_templates/subway-find.html", 
                                start=start, 
@@ -599,3 +609,4 @@ def step(num):
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port="8080", debug=True)
+
