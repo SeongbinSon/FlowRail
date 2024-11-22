@@ -2,125 +2,150 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="{{ url_for('static', filename='check-time.css') }}" />
+
     </head>
     <body>
         <div class="FlowRail-First">
-
-                <span class="real">
+                <div class="real">
                     실시간
-                </span>
-                <span class="trailtime">
+                </div>
+                <div class="trailtime">
                     열차시간
-                </span>
+                </div>
 
-                <span class="sub-name">
+                <div class="sub-name">
                     서울 1호선 ~ 8호선, 수인분당선
-                </span>
-
-                <span class="seoul-line1">
-                    서울 1호선
-                </span>
-
-                <span class="seoul-line2">
-                    서울 2호선
-                </span>
-
-                <span class="seoul-line3">
-                    서울 3호선
-                </span>
-
-                <span class="seoul-line4">
-                    서울 4호선
-                </span>
-
-                <span class="seoul-line5">
-                    서울 5호선
-                </span>
-
-                <span class="seoul-line6">
-                    서울 6호선
-                </span>
-
-                <span class="seoul-line7">
-                    서울 7호선
-                </span>
-
-                <span class="seoul-line8">
-                    서울 8호선
-                </span>
-
-                <span class="seoul-suinbundang">
-                    수인분당선
-                </span>
-
-
-                <div class="line1-r"></div>
-                <div class="line1-e"></div>
-                <span class="line1-text">
-                    1
-                </span>
-
-                <div class="line2-r"></div>
-                <div class="line2-e"></div>
-                <span class="line2-text">
-                    2
-                </span>
-
-                <div class="line3-r"></div>
-                <div class="line3-e"></div>
-                <span class="line3-text">
-                    3
-                </span>
-    
-                <div class="line4-r"></div>
-                <div class="line4-e"></div>
-                <span class="line4-text">
-                    4
-                </span>
-
-                <div class="line5-r"></div>
-                <div class="line5-e"></div>
-                <span class="line5-text">
-                    5
-                </span>
-    
-                <div class="line6-r"></div>
-                <div class="line6-e"></div>
-                <span class="line6-text">
-                    6
-                </span>
-                
-                <button class="gotofind" onclick="location.href='subway-find'">
-                    최단거리 검색하기 ->
-                </button>
-
-                <div class="line7-r"></div>
-                <div class="line7-e"></div>
-                <span class="line7-text">
-                    7
-                </span>
-    
-                <div class="line8-r"></div>
-                <div class="line8-e"></div>
-                <span class="line8-text">
-                    8
-                </span>
-
-                <div class="line-suinbundang-r"></div>
-                <div class="line-suinbundang-e"></div>
-                <span class="line-suinbundang-text">
-                    수인분당선
-            </div>
-            </span>
+                </div>
+                <div class="line_container">
+                    <div class="line_content">
+                        <div class="line_label">
+                            서울 1호선
+                        </div>
+                        <div class="line-r"style="background-color: #1713cd;">
+                            <div class="line-e">
+                                <span class="line-text" style="color:#1713cd">
+                                    1
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line_content">
+                        <div class="line_label">
+                            서울 2호선
+                        </div>
+                        <div class="line-r" style="background-color: #19981e;">\
+                            <div class="line-e">
+                                <span class="line-text" style="color: #19981e;">
+                                    2
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line_content">
+                        <div class="line_label">
+                            서울 3호선
+                        </div>
+                        <div class="line-r" style="background-color: #ef2323;">\
+                            <div class="line-e">
+                                <span class="line-text" style="color: #ef2323;">
+                                    3
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line_content">
+                        <div class="line_label">
+                            서울 4호선
+                        </div>
+                        <div class="line-r" style="background-color: #0099a3;">
+                            <div class="line-e">
+                                <span class="line-text" style="color: #0099a3;">
+                                    4
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line_content">
+                        <div class="line_label">
+                            서울 5호선
+                        </div>
+                        <div class="line-r" style="background-color: #201a66;">\
+                            <div class="line-e">
+                                <span class="line-text" style="color: #201a66;">
+                                    5
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line_content">
+                        <div class="line_label">
+                            서울 6호선
+                        </div>
+                        <div class="line-r"style="background-color: #a34e00;">
+                            <div class="line-e">
+                                <span class="line-text" style="color: #a34e00;">
+                                    6
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line_content">
+                        <div class="line_label">
+                            서울 7호선
+                        </div>
+                        <div class="line-r" style="background-color: #458900;">
+                            <div class="line-e">
+                                <span class="line-text" style="color: #458900;">
+                                    7
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line_content">
+                        <div class="line_label">
+                            서울 8호선
+                        </div>
+                        <div class="line-r" style="background-color: #E6186C;">
+                            <div class="line-e">
+                                <span class="line-text" style="color: #E6186C;">
+                                    8
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line_content">
+                        <div class="line_label">
+                            수인분당선
+                        </div>
+                        <div class="line-r" style="background-color: #c9e41f;">
+                            <div class="line-e">
+                                <span class="line-text" style="color: #000; font-size: 100%;">
+                                    수인
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div> <button class="gotofind" onclick="location.href='/subway-find'">지하철 길 찾기</button></div>
+                </div>
         <script>
-            const lineElements = document.querySelectorAll('[class^="line"]')
+ 
+            const lineElements = document.querySelectorAll('.line_content');
+
             lineElements.forEach(element => {
-                element.addEventListener('click', (event) =>{
-                    const className = event.target.className;
-                    const lineNumber = className.match(/\d+/)[0];
+                element.addEventListener('click', (event) => {
+                    const lineText = event.target.closest('.line_content').querySelector('.line-text').textContent;
+                    let lineNumber = '';
+
+                    if (lineText.includes('수인')) {
+                        lineNumber = '수인분당선'; 
+                    } else {
+                        lineNumber = lineText.match(/\d+/)[0];
+                    }
                     location.href = `/station-search?lineno=${lineNumber}`;
                 });
-            })
+            });
         </script>
+        
     </body>
 </html>
