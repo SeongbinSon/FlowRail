@@ -52,15 +52,11 @@ number_line = {
 }
 # /* ------------------------------------------------------------------------------------------------ */
 
-@app.route('/')
-def hello_world():
-    return render_template('form.html', arrivaltime = None , RTSA_firstMsg = None , RTSA_secondMsg = None , SW_INFOLIST = None)
-
 @app.route('/subway')
 def test_subway():
     return render_template('search.html')
 
-@app.route('/first')
+@app.route('/')
 def test_first_page():
     return render_template('./service_templates/index.html')
 
@@ -170,7 +166,7 @@ def getsubway():
 
    #열차 검색을 위한 RTSA_url_First_search
     RTSA_url_First_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/0/40/"+name
-    RTSA_url_Second_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/1/40/"+name
+    RTSA_url_Second_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/2/40/"+name
     #RTSA_url_Third_search = "http://swopenAPI.seoul.go.kr/api/subway/476a4267646572723737724355686d/json/realtimeStationArrival/2/40/"+name
     # 실시간 역 도착정보 불러오기
     RTSA_get_info = requests.get(RTSA_url_First_search)
