@@ -125,6 +125,7 @@ img.search_img {
     background-position: center;
     background-repeat: no-repeat;
     color: rgba(0, 0, 0, 0);
+    transform: scale(3);
 }
 
 img.line-menu_img{
@@ -187,4 +188,16 @@ input.dn-line {
     letter-spacing: normal;
     text-align: left;
     color: #fff;
+}
+input[type="radio"] {
+    transform: scale(3); /* 크기를 300%로 확대 */
+    margin: 10px; /* 여백 조정 */
+}
+#stationName{
+    font-size: 300%;
+}
+input[type="text"]:focus {
+    border: none; /* 테두리 제거 */
+    color: white; /* 글씨 색을 흰색으로 변경 */
+    outline: none;
 }
